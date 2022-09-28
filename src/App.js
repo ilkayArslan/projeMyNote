@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Container } from "react-bootstrap";
+import "./app.css"
+import Search from "./companents/search";
+import FormArea from "./companents/FormArea";
+import Notes from "./companents/Notes"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="middle">
+      <Container className=" bg-light text-center">
+        <Search />
+        <FormArea />
+        <Notes />
+      </Container>
     </div>
   );
 }
